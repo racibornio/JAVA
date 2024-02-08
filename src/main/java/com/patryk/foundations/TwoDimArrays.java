@@ -111,5 +111,33 @@ public class TwoDimArrays {
         System.out.println(threeDimArray[1][1][0]);
         System.out.println(threeDimArray[1][1][1]);
 
+
+        // 6th exercise - 2.39a from the book
+        int[][] tab6th = new int[4][];
+//        tab6th[0] = new int[4];
+//        tab6th[1] = new int[3];
+//        tab6th[2] = new int[2];
+//        tab6th[3] = new int[1];
+
+        // this does in the loop exactly the same as four lines above
+        for (int i = 0; i < tab6th.length; i++) {
+            tab6th[i] = new int[4 - i];
+        }
+
+        int counterForTab6th = 1;
+        for (int i = 0; i < tab6th.length; i++) {
+            for (int j = 0; j < tab6th[i].length; j++) {
+                tab6th[i][j] = counterForTab6th++;
+            }
+        }
+
+        for (int[] ints : tab6th) {
+            for (int anInt : ints) {
+                //System.out.println("Array cell[" + i + "][" + j + "] = " + tab6th[i][j]);
+                System.out.print(anInt + " ");
+            }
+            System.out.println(" ");
+        }
+
     }
 }
