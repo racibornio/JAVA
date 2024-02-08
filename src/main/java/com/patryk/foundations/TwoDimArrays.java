@@ -139,5 +139,13 @@ public class TwoDimArrays {
             System.out.println(" ");
         }
 
+
+        // 7th exercise - deravitive of 'enhanced' for loop
+        //int[] enhancedArray = new int [3];
+        int[] enhancedArray = {11, 22, 33};
+        for (int i : enhancedArray) {
+            System.out.println("i :" + i);
+        }
+
     }
 }
