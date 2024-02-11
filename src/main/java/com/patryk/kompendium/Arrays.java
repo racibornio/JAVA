@@ -44,6 +44,27 @@ public class Arrays {
             System.out.println();
         }
 
+
+        // try 4-dim array
+
+        int[][][][] fourDimArray = new int[2][][][];
+        fourDimArray[0] = new int[2][][];
+        fourDimArray[1] = new int[2][][];
+
+        fourDimArray[0][0] = new int [2][];
+        fourDimArray[0][1] = new int [2][];
+        fourDimArray[1][0] = new int [2][];
+        fourDimArray[1][1] = new int [2][];
+
+        fourDimArray[0][0][0] = new int [2];
+        fourDimArray[0][0][1] = new int [2];
+        fourDimArray[0][1][0] = new int [2];
+        fourDimArray[0][1][1] = new int [2];
+        fourDimArray[1][0][0] = new int [2];
+        fourDimArray[1][0][1] = new int [2];
+        fourDimArray[1][1][0] = new int [2];
+        fourDimArray[1][1][1] = new int [2];
+
     }
 
 }
