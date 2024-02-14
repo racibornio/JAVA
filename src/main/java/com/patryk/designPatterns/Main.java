@@ -11,5 +11,6 @@ public class Main {
         Moving truck1 = new Trucks();
         truck1.run();
         truck1.stop();
+
     }
 }

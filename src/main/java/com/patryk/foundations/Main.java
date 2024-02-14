@@ -20,5 +20,13 @@ public class Main {
 
         // default implementation of 'equals()' works the same as '==' operator so in order to compare two objects by their content the 'equals()' method should be overriden in your class
 
+
+        ObjectsAsParameters objectsAsParameters = new ObjectsAsParameters();
+        objectsAsParameters.door = 1;
+
+        ObjectsAsParameters objectsAsParameters1 = new ObjectsAsParameters(objectsAsParameters);
+        System.out.println("Door :" + objectsAsParameters1.door);
+
+
     }
 }
