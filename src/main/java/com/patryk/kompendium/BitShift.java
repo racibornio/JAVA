@@ -2,6 +2,9 @@ package com.patryk.kompendium;
 
 public class BitShift {
     public static void main(String[] args) {
+
+        //////////////////////////////////////////////////////////////
+        // left shift
         byte a = 64, b;
         int i;
 
@@ -14,10 +17,10 @@ public class BitShift {
         // move to multiply and return
         int initialA = 2;
         System.out.println(initialA);
-        int movedA = initialA << 1;
-        System.out.println(movedA);
-        int returnedA = movedA >> 1;
-        System.out.println(returnedA);
+        initialA = initialA << 1;
+        System.out.println(initialA);
+        initialA = initialA >> 1;
+        System.out.println(initialA);
 
         // hex values
         int firstHexValue = 0xF0;
@@ -30,5 +33,15 @@ public class BitShift {
             num = num << 1;
             System.out.println(num);
         }
+
+
+        //////////////////////////////////////////////////////////////
+        // right shift
+
+        int rightA = 32;
+        System.out.println(rightA);
+        rightA = rightA >> 2;
+        System.out.println(rightA);
+
     }
 }
