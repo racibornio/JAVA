@@ -4,9 +4,9 @@ public class StaticFabricMethods {
     int value;
 
     public static StaticFabricMethods anObject(int value) {
-        StaticFabricMethods staticFabricMethod = new StaticFabricMethods();
-        staticFabricMethod.value = value;
-        return staticFabricMethod;
+        StaticFabricMethods anObjectFromstaticFabricMethod = new StaticFabricMethods();
+        anObjectFromstaticFabricMethod.value = value;
+        return anObjectFromstaticFabricMethod;
     }
 
 }

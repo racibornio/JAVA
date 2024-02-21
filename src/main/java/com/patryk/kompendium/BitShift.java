@@ -17,9 +17,9 @@ public class BitShift {
         // move to multiply and return
         int initialA = 2;
         System.out.println(initialA);
-        initialA = initialA << 1;
+        initialA <<= 1;
         System.out.println(initialA);
-        initialA = initialA >> 1;
+        initialA >>= 1;
         System.out.println(initialA);
 
         // hex values
@@ -30,7 +30,7 @@ public class BitShift {
         int num = 0xFFFFFFE;
 
         for (int iter = 0; iter < 4; iter++) {
-            num = num << 1;
+            num <<= 1;
             System.out.println(num);
         }
 
@@ -44,7 +44,7 @@ public class BitShift {
 
         int rightA = 32;
         System.out.println(rightA);
-        rightA = rightA >> 2;
+        rightA >>= 2;
         System.out.println(rightA);
 
         // every shift-right moves bits by one position
@@ -59,6 +59,28 @@ public class BitShift {
         };
         byte bHex = (byte) 0xf1;
         System.out.println("bHex = 0x" + hex[(bHex >> 4) & 0x0f] + hex[bHex & 0x0f]);
+
+
+        // exercise - move bits left
+        int exerc1 = 1;
+        while (exerc1 != 0) {
+            exerc1 <<= 1;
+            System.out.println("exerc1 = " + exerc1 );
+        }
+
+        long exerc2 = 1;
+        while (exerc2 != 0) {
+            exerc2 <<= 1;
+            System.out.println("exerc2 = " + exerc2);
+        }
+
+        int maxIntVal = 0b01000000000000000000000000000000;
+        System.out.println("Initial value of maxIntVal = " + maxIntVal);
+        while (maxIntVal != 0) {
+            maxIntVal >>= 1;
+            System.out.println("maxIntVal = " + maxIntVal);
+        }
+
 
     }
 }
