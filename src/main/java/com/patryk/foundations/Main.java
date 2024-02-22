@@ -42,5 +42,16 @@ public class Main {
 
         System.out.println("Constructor3 :");
         constructor3.displayNumbers();
+
+        // garbage collector
+        Finalize finalize = null;
+        for (int i = 0; i < 10; i++) {
+            finalize = new Finalize();
+        }
+        System.gc();
+        /* finalize() is deprecated and may be soon removed from Java
+         * try-with-resources is recommended
+         * or the interface AutoCleseable
+         */
     }
 }
