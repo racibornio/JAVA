@@ -53,5 +53,11 @@ public class Main {
          * try-with-resources is recommended
          * or the interface AutoCloseable
          */
+
+        try (AutoClose autoClose = new AutoClose()) {
+            autoClose.doTask();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
