@@ -51,7 +51,7 @@ public class Main {
         System.gc();
         /* finalize() is deprecated and may be soon removed from Java
          * try-with-resources is recommended
-         * or the interface AutoCleseable
+         * or the interface AutoCloseable
          */
     }
 }
