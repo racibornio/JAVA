@@ -4,6 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        ObjectsComparison ocnull = null;
+        // System.out.println("ocnull hashcode = " + ocnull.hashCode()); - throws exception - no object with corresponding resources
+        System.out.println("ocnull = " + ocnull);
+
         ObjectsComparison oc1 = new ObjectsComparison();
         ObjectsComparison oc2 = new ObjectsComparison();
 
