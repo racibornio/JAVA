@@ -63,5 +63,11 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        // Abstract classes
+        AbstractClassExtended abstractClassExtended1 = new AbstractClassExtended();
+        abstractClassExtended1.helloAbstract();
+        AbstractClass.nonAbstractMethodFromAbstractClass();
+
     }
 }
