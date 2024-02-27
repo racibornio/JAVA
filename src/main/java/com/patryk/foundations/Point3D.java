@@ -9,6 +9,7 @@ public class Point3D extends Point {
         this.z = z;
     }
 
+    // this gets superclass relevant constructor and extends it with another parameter that is passed extra - the object gets cast
     Point3D(Point point, int z) {
         super(point);
         this.z = z;
