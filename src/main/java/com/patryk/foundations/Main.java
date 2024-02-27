@@ -69,5 +69,10 @@ public class Main {
         abstractClassExtended1.helloAbstract();
         AbstractClass.nonAbstractMethodFromAbstractClass();
 
+        Point point = new Point(1, 2);
+        Point3D point3D = new Point3D(point, 3);
+        point3D.z = 3;
+        System.out.println(point3D.x + ", " + point3D.y + ", " + point3D.z);
+
     }
 }
