@@ -71,8 +71,10 @@ public class Main {
 
         Point point = new Point(1, 2);
         Point3D point3D = new Point3D(point, 3);
-        point3D.z = 3;
-        System.out.println(point3D.x + ", " + point3D.y + ", " + point3D.z);
+        System.out.println("Fields: " + point3D.x + ", " + point3D.y + ", " + point3D.z);
 
+        // Below only sub-class's field is initiated so the fields inherited by super() are set to 0 by default
+        Point3D point3Dsimple = new Point3D(15);
+        System.out.println("Simple invoke - x: " + point3Dsimple.x + ", y: " + point3Dsimple.y + ", z: " + point3Dsimple.z);
     }
 }
