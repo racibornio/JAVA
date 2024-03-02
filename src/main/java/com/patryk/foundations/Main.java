@@ -76,5 +76,10 @@ public class Main {
         // Below only sub-class's field is initiated so the fields inherited by super() are set to 0 by default
         Point3D point3Dsimple = new Point3D(15);
         System.out.println("Simple invoke - x: " + point3Dsimple.x + ", y: " + point3Dsimple.y + ", z: " + point3Dsimple.z);
+
+        // inheritance of methods - B in A
+        B b = new B();
+        b.f();
+
     }
 }

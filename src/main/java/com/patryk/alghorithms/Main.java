@@ -63,7 +63,7 @@ public class Main {
         int bRows = B.length;
         int bColumns = B[0].length;
 
-        // check if multilying is possible - sizes equal
+        // check if multiplying is possible - sizes equal
         if (aColumns != bRows) {
             throw new IllegalArgumentException("Entry matrixes size don't match.");
         }
