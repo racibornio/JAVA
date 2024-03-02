@@ -65,7 +65,7 @@ public class Main {
 
         // check if multilying is possible - sizes equal
         if (aColumns != bRows) {
-            throw new IllegalArgumentException("Liczba kolumn w A musi by? równa liczbie wierszy w B.");
+            throw new IllegalArgumentException("Entry matrixes size don't match.");
         }
 
         // create result matrix
