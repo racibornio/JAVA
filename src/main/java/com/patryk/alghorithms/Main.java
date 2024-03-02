@@ -43,5 +43,52 @@ public class Main {
         for (int i = 0; i < N; i++) {
             System.out.println("The table index " + i + " after reversion is " + tabOfDoubles[i]);
         }
+
+        // multiply matrix
+        double[][] A = {
+                {1, 2, 3},
+                {4, 5, 6}
+        };
+        double[][] B = {
+                {7, 8},
+                {9, 10},
+                {11, 12}
+        };
+
+        // matrix a dimensions
+        int aRows = A.length;
+        int aColumns = A[0].length;
+
+        // matrix b dimensions
+        int bRows = B.length;
+        int bColumns = B[0].length;
+
+        // check if multilying is possible - sizes equal
+        if (aColumns != bRows) {
+            throw new IllegalArgumentException("Liczba kolumn w A musi by? równa liczbie wierszy w B.");
+        }
+
+        // create result matrix
+        double[][] C = new double[aRows][bColumns];
+
+        // mulitply matrixes
+        for (int i = 0; i < aRows; i++) {
+            for (int j = 0; j < bColumns; j++) {
+                for (int k = 0; k < aColumns; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+
+        // display result matrix
+        System.out.println("Multiplying A and B result is:");
+        for (int i = 0; i < aRows; i++) {
+            for (int j = 0; j < bColumns; j++) {
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
     }
 }
