@@ -19,7 +19,7 @@ public class Arrays {
             System.out.println(arr2[i]);
         }
 
-
+        // the loop needs only to do the math for half of the table as the second is already done meanwhile
         for (int i = 0; i < arr2.length / 2; i++) {
             temp = arr2[i];
             arr2[i] = arr2[arr2.length - 1 - i];
