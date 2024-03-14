@@ -81,5 +81,17 @@ public class Main {
         B b = new B();
         b.f();
 
+
+        // static class field and method - can be stored in a local variable
+        Static.setA(44);
+        System.out.println(Static.getA());
+        int valueFromStatic = Static.getA();
+        System.out.println("From variable " + valueFromStatic);
+
+        Static staticBobject = new Static();
+        staticBobject.setB(444);
+        int staticBFieldValueByNonStaticMethod = staticBobject.getB();
+        System.out.println("Static field set via non-static method: " + staticBFieldValueByNonStaticMethod);
+
     }
 }
