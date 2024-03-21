@@ -89,6 +89,14 @@ public class Main {
             System.out.println();
         }
 
+        int[][] multiTable = {
+                {11},
+                {22, 33}
+        };
+
+        System.out.println("multiTable length is " + multiTable.length);
+        System.out.println("Its first row length is " + multiTable[0].length);
+        System.out.println("Its second row length is " + multiTable[1].length);
 
     }
 }
