@@ -95,7 +95,7 @@ public class Main {
 
 
         // final classes, fields and methods
-        final FinalClassAndMembers finalObject = new FinalClassAndMembers();
+        final FinalClassAndMembers finalObject = new FinalClassAndMembers(3);
         finalObject.classField = 99;
         System.out.println("Final object's field is " + finalObject.classField);
         // final object's (which is just a field of Main class) can be modified (as soon as not final) - final object itself, i.e. the reference it is cannot be so no way to assign new instance of the class to the Main field created that way
