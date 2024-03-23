@@ -93,5 +93,12 @@ public class Main {
         int staticBFieldValueByNonStaticMethod = staticBobject.getB();
         System.out.println("Static field set via non-static method: " + staticBFieldValueByNonStaticMethod);
 
+
+        // final classes, fields and methods
+        final FinalClassAndMembers finalObject = new FinalClassAndMembers();
+        finalObject.classField = 99;
+        System.out.println("Final object's field is " + finalObject.classField);
+        // final object's (which is just a field of Main class) can be modified (as soon as not final) - final object itself, i.e. the reference it is cannot be so no way to assign new instance of the class to the Main field created that way
+        //finalObject = new FinalClassAndMembers(); - this is not gonna work
     }
 }
